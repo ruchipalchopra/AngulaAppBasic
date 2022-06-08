@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+$color_1: #264D73;
+$color_2: #444;
+$color_3: #333;
+$color_4: black;
+$color_5: white;
+$color_6: #aaa;
+$color_7: #3d3d3d;
+$font-family_1: Arial, Helvetica, sans-serif;
+$font-family_2: Cambria, Georgia, serif;
+$background-color_1: #eee;
+$background-color_2: black;
+$background-color_3: #e8e8e8;
+$background-color_4: #42545C;
+
+/* Global Styles */
+/* Navigation link styles */
+* {
+	font-family: $font-family_1;
+}
+h1 {
+	color: $color_1;
+	font-size: 2.5rem;
+}
+h2 {
+	color: $color_2;
+	font-weight: lighter;
+}
+h3 {
+	color: $color_2;
+	font-weight: lighter;
+	font-size: 1.3rem;
+}
+body {
+	padding: .5rem;
+	max-width: 1000px;
+	margin: auto;
+	color: $color_3;
+	font-family: $font-family_2;
+}
+input[text] {
+	color: $color_3;
+	font-family: $font-family_2;
+}
+a {
+	cursor: pointer;
+}
+button {
+	background-color: $background-color_1;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: $color_4;
+	font-size: 1.2rem;
+	padding: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_5;
+	}
+	&:disabled {
+		background-color: $background-color_1;
+		color: $color_6;
+		cursor: auto;
+	}
+}
+nav {
+	a {
+		padding: 5px 10px;
+		text-decoration: none;
+		margin-right: 10px;
+		margin-top: 10px;
+		display: inline-block;
+		background-color: $background-color_3;
+		color: $color_7;
+		border-radius: 4px;
+		&:hover {
+			color: $color_5;
+			background-color: $background-color_4;
+		}
+	}
+	a.active {
+		background-color: $background-color_2;
+		color: $color_5;
+	}
+}
+hr {
+	margin: 1.5rem 0;
+}
+input[type="text"] {
+	box-sizing: border-box;
+	width: 100%;
+	padding: .5rem;
+}
+@media (min-width: 600px) {
+	body {
+		padding: 2rem;
+	}
+}

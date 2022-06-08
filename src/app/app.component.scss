@@ -1,0 +1,50 @@
+$color_1: #3d3d3d;
+$color_2: white;
+$background-color_1: #e8e8e8;
+$background-color_2: #42545C;
+$background-color_3: black;
+
+/* AppComponent's private CSS styles */
+h1 {
+	margin-bottom: 0;
+}
+nav {
+	a {
+		padding: 1rem;
+		text-decoration: none;
+		margin-top: 10px;
+		display: inline-block;
+		background-color: $background-color_1;
+		color: $color_1;
+		border-radius: 4px;
+		&:hover {
+			color: $color_2;
+			background-color: $background-color_2;
+		}
+	}
+	a.active {
+		background-color: $background-color_3;
+	}
+}
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }

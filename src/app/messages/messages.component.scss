@@ -1,0 +1,25 @@
+$color_1: #A80000;
+$color_2: #333;
+$color_3: white;
+$font-family_1: Arial, Helvetica, sans-serif;
+$background-color_1: #eee;
+$background-color_2: #42545C;
+
+/* MessagesComponent's private CSS styles */
+h2 {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-weight: lighter;
+}
+.clear {
+	color: $color_2;
+	background-color: $background-color_1;
+	margin-bottom: 12px;
+	padding: 1rem;
+	border-radius: 4px;
+	font-size: 1rem;
+	&:hover {
+		color: $color_3;
+		background-color: $background-color_2;
+	}
+}

@@ -1,0 +1,21 @@
+
+
+<div class="row">
+    <h3>Fahrenheit to Celsius</h3>
+  </div>
+  <div class="row">
+    <p>
+      Fahrenheit : <input type="text" [(ngModel)]="Fahrenheit" /> Celsius :
+      {{ Fahrenheit | CustomPipe_AppendStringPipe: "C" }}
+    </p>
+  </div>
+  
+  <div class="row">
+    <h3>Celsius to Fahrenheit</h3>
+  </div>
+  <div class="row">
+    <p>
+      celsius : <input type="text" [(ngModel)]="celsius" /> Fahrenheit :
+      {{ celsius | CustomPipe_AppendStringPipe: "F" }}
+    </p>
+  </div>
